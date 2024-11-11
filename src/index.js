@@ -5,7 +5,7 @@ const PORT = 3000;
 
 // Middleware to parse JSON requests and handle cors
 app.use(express.json());
-app.use(cors({
+app.use(cors({ 
   origin: '*',
   methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS', 'PUT'],
   allowedHeaders: ['X-CSRF-Token', 'X-Requested-With', 'Accept', 'Accept-Version', 'Content-Length', 'Content-MD5', 'Content-Type', 'Date', 'X-Api-Version'],
