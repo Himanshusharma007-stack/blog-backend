@@ -5,7 +5,7 @@ const PORT = 3000;
 
 // Middleware to parse JSON requests and handle cors
 app.use(express.json());
-app.use(cors());
+app.use(cors( { origin: "*" } ));
 
 // Load mongo config 
 require("../config");
