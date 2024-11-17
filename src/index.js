@@ -9,8 +9,8 @@ app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS', 'PUT'],
   allowedHeaders: ['X-CSRF-Token', 'X-Requested-With', 'Accept', 'Accept-Version', 'Content-Length', 'Content-MD5', 'Content-Type', 'Date', 'X-Api-Version'],
-  credentials: true
 }));
+app.options('*', cors());
 
 // Load mongo config 
 require("../config");
