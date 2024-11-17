@@ -1,6 +1,6 @@
 const express = require("express");
 const blogController = require("../controllers/blog");
-const { validateJwt } = require("../middlewares/validatejwt");
+// const { validateJwt } = require("../middlewares/validatejwt");
 
 const router = express.Router();
 
